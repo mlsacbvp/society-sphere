@@ -1,11 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+import Society from './Society.js';
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route exact path='/Society' element={<Society />} />
+        </Routes>
+      </Router>
+    </>
   );
 }
 
