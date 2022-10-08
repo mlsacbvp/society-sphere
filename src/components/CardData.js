@@ -5,7 +5,7 @@ const Data = [
       category: "Technical",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
-    },
+      },
   
     {
       image: "images/MLSAC.png",
@@ -13,14 +13,17 @@ const Data = [
       category: "Technical",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
-    },
+
+      },
+
     {
       image: "images/MLSAC.png",
       name: "BMS",
-      category: "Cultural",
+      category: "Technical",
       description:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, at consectetur totam voluptatibus quibusdam iusto. Accusamus quas, soluta ipsam autem eius necessitatibus fugiat in . ",
     },
+  
     {
       image: "images/MLSAC.png",
       name: "AAGAZ",
