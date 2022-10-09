@@ -74,7 +74,6 @@ GitHub will alert you that you can merge the two branches because there is no co
 
 Please ensure your pull request adheres to the following guidelines:
 
-- Start the name with a capital.
 - Check your spelling and grammar.
 - Make sure your text editor is set to remove trailing whitespace.
 <br>

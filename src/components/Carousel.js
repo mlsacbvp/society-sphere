@@ -3,7 +3,7 @@ import './Carousel.css';
 
 const Carousel = () => {
   return (
-    <div>Carousel</div>
+    <h1 className="head">RECENT EVENTS</h1>
   )
 }
 

@@ -16,6 +16,7 @@ const filterItem = (category) => {
 }   
 
     return(
+        
         <>
       <div className="btn">
         <button className="btn-item" onClick={() => filterItem("Technical")}>Technical</button>
