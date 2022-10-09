@@ -9,33 +9,27 @@
     display: grid;
     grid-template-columns: repeat(4, minmax(400px, 500px));
     grid-gap: 50px;
-    justify-content: space-around;
-    padding-bottom: 5em;
-    padding-left: 10em;
-
+    /* justify-content: space-around; */
 
 }
 
-.card {
+.Society_cards {
     /* size */
     height: 350px;
     width: 300px;
 
     position: relative;
     transform-style: preserve-3d;
-    transition: transform 1500ms;
-
+    transition: transform 400ms ease-in;
 
     /* Style */
     /* border-radius: 15px 50px 30px 5px;
    
-    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);
-     */
+    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.8);*/
     border-radius: 25px;
     border: 1px solid black;
     background-color: #2d3546;
     padding: 20px;
-
     /* margin: 25px auto auto; */
     /* position: relative; */
     /* display: grid; */
@@ -44,7 +38,7 @@
     align-items: flex-start; */
 }
 
-.card:hover {
+.Society_cards:hover {
     transform: rotateY(180deg);
 }
 
@@ -75,31 +69,51 @@
     background-color: white;
 }
 
+.card-front h6{
+    margin: 3rem;
+}
+
 .card-back {
     background-color: white;
     transform: rotateY(180deg);
 }
 
-.img {
+.image {
     margin-top: 45px;
     height: 130px;
     width: auto;
 }
 
 .para {
-    font-size: 1rem;
-    align-self: center;
+    font-size: 1.2rem;
+    text-align: center;
+    /* font-family: serif; */
 }
 
 .categ {
     display: block;
+    /* font-family: 'Alkalami'; */
     font-size: 20px;
     letter-spacing: 2px;
     margin-bottom: 40px;
     color: black;
 }
-.head1{
-    color: #EFCA46;
-    text-align: left;
-    padding-right: 85%;
+
+.img{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+.links{
+    display: flex;
+}
+
+.btn-item{
+    cursor: pointer;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
 }
