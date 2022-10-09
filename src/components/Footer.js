@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import FlipCard from "./FlipCard";
 // import { BrowserRouter } from "react-router-dom";
 // import{HashLink as Link} from "react-router-hash-link";
 
@@ -27,7 +28,7 @@ const Footer = () => {
           {/* <li><Link to ="#ConnectCarousel">Societies Recent Event  </Link></li>
             <li><Link to="#ConnectCards">All Societies</Link></li> */}
             <li><a href ="#ConnectCarousel">Societies Recent Event  </a></li>
-            <li><a href="#ConnectCards">All Societies</a></li>
+            <li><a href="#head1">All Societies</a></li>
           </ui>
         </div>
         <div className="col-lg-3">

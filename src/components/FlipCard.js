@@ -10,7 +10,7 @@ const FlipCard = () => {
     return(
         
         <>
-        <h1 className="head1"> SOCIETIES</h1>
+        <h1 className="head1" id='head1'> SOCIETIES</h1>
     {/* <nav className="navbar">
         <div className="btn">
             <button className="btn-item">Non-Technical</button>
