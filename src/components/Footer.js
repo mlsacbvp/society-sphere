@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css";
-import FlipCard from "./FlipCard";
+// import FlipCard from "./FlipCard";
 // import { BrowserRouter } from "react-router-dom";
 // import{HashLink as Link} from "react-router-hash-link";
 
@@ -32,7 +32,7 @@ const Footer = () => {
           </ui>
         </div>
         <div className="col-lg-3">
-          <button onClick={top} className="btn"><img src="\images\top.png"></img></button>
+          <button onClick={top} className="btn"><img src="\images\top.png" alt='top'></img></button>
         </div>
       </div>
       <div className="row1">
