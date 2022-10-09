@@ -8,7 +8,7 @@ const Card = ({cardData}) => {
     {
     cardData.map((curElem, i) => {
         return(
-            <div className='card' key={i}>
+            <div className='Society_cards' key={i}>
             <div className="card-front">
                 <img src={curElem.image} className='image' />
                 <h6>{curElem.name}</h6>

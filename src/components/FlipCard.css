@@ -13,7 +13,7 @@
 
 }
 
-.card {
+.Society_cards {
     /* size */
     height: 350px;
     width: 300px;
@@ -38,7 +38,7 @@
     align-items: flex-start; */
 }
 
-.card:hover {
+.Society_cards:hover {
     transform: rotateY(180deg);
 }
 
