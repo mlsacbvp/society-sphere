@@ -18,7 +18,7 @@ const filterItem = (category) => {
     return(
         
         <>
-      <div className="btn">
+      <div className="btn-group">
         <button className="btn-item" onClick={() => filterItem("Technical")}>Technical</button>
         <button className="btn-item" onClick={() => filterItem("Non-Technical")}>Non-Technical</button>
         <button className="btn-item" onClick={() => filterItem("Cells")}>Cells</button>
