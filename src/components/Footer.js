@@ -14,7 +14,7 @@ const Footer = () => {
         <div className="col-lg-3">
           <h2>About us </h2>
           <h4 className="list-unstyled">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra neque vel bibendum accumsan. Morbi quis massa eget turpis pretium elementum. Pellentesque eget iaculis nisl. Vestibulum vehicula venenatis justo ac luctus. </li>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra neque vel bibendum accumsan. Morbi quis massa eget turpis pretium elementum. Pellentesque eget iaculis nisl. Vestibulum vehicula venenatis justo ac luctus. </p>
           </h4>
         </div>
         <div className="col-lg-3">
@@ -24,12 +24,22 @@ const Footer = () => {
         </div>
         <div className="col-lg-3">
           <h2>Links</h2>
-          <ui className="list-unstyled">
+          <ul className="list-unstyled">
           {/* <li><Link to ="#ConnectCarousel">Societies Recent Event  </Link></li>
             <li><Link to="#ConnectCards">All Societies</Link></li> */}
-            <li><a href ="#ConnectCarousel">Societies Recent Event  </a></li>
+            {/* <li><a href ="#ConnectCarousel">Societies Recent Event  </a></li>
             <li><a href="#head1">All Societies</a></li>
-          </ui>
+          </ul>
+            <li>
+              <a href="#Carousel">Societies Recent Events</a>
+            </li>
+            <li>
+              <a href="#FlipCard">All Societies</a>
+            </li> */}
+
+            <p><a href ="#carousel">Societies Recent Event  </a></p>
+            <p><a href="#flipCard">All Societies</a></p>
+          </ul>
         </div>
         <div className="col-lg-3">
           <button onClick={top} className="btn"><img src="\images\top.png" alt='top'></img></button>
