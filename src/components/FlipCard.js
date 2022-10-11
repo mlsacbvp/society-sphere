@@ -4,24 +4,27 @@ import Card from "./Card";
 import { useState } from 'react';
 
 
+
 const FlipCard = () => {
     const [cardData, setCardData] = useState(Data);
+
+const filterItem = (category) => {
+    const updatedList = Data.filter((curElem) => {
+        return curElem.category === category;
+    });
+    setCardData(updatedList);
+}   
 
     return(
         
         <>
-        <h1 className="head1"> SOCIETIES</h1>
-    {/* <nav className="navbar">
-        <div className="btn">
-            <button className="btn-item">Non-Technical</button>
-            <button className="btn-item">Technical</button>
-            <button className="btn-item">Cells</button>
-            <button className="btn-item">Cultural</button>
-            <button className="btn-item">ALL</button>
-        </div>
-    </nav> */}
-
-
+      <div className="btn-group">
+        <button className="btn-item" onClick={() => filterItem("Technical")}>Technical</button>
+        <button className="btn-item" onClick={() => filterItem("Non-Technical")}>Non-Technical</button>
+        <button className="btn-item" onClick={() => filterItem("Cells")}>Cells</button>
+        <button className="btn-item" onClick={() => filterItem("Cultural")}>Cultural</button>
+        <button className="btn-item" onClick={() => setCardData(Data)}>ALL</button>
+      </div>
         <Card cardData={cardData} />
         </>
     )

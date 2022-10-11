@@ -1,86 +1,135 @@
-// import React from 'react';
-// import './Carousel.css';
+import React from 'react';
+import './Carousel.css';
 
-// class Card1 extends React.Component {
-//   state = {  } 
-//   render() { 
-//     return (
-//       <div>
-//        <div
-//   id="carouselExampleSlidesOnly"
-//   className="carousel slide"
-//   data-bs-ride="carousel"
-// >
-//   <div className="carousel-inner">
-//     <div className="carousel-item ">
-//       <img src="./images/MLSAC.png" className="image" alt="first" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="second" />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="image" alt="third" />
-//     </div>
-//   </div>
-// </div>
-// <div
-//   id="carouselExampleControls"
-//   className="carousel slide"
-//   data-bs-ride="carousel"
-// >
-//   <div className="carousel-inner">
-//     <div className="carousel-item active">
-//       <img src="./images/MLSAC.png" className="d-block w-100" alt="..." />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="d-block w-100" alt="..." />
-//     </div>
-//     <div className="carousel-item">
-//       <img src="./images/MLSAC.png" className="d-block w-100" alt="..." />
-//     </div>
-//   </div>
-//   <button
-//     className="carousel-control-prev"
-//     type="button"
-//     data-bs-target="#carouselExampleControls"
-//     data-bs-slide="prev"
-//   >
-//     <span className="carousel-control-prev-icon" aria-hidden="true" />
-//     <span className="visually-hidden">Previous</span>
-//   </button>
-//   <button
-//     className="carousel-control-next"
-//     type="button"
-//     data-bs-target="#carouselExampleControls"
-//     data-bs-slide="next"
-//   >
-//     <span className="carousel-control-next-icon" aria-hidden="true" />
-//     <span className="visually-hidden">Next</span>
-//   </button>
-// </div>
-
-//       </div>
-//     );
-//   }
-// }
+class Card1 extends React.Component {
+  state = {  } 
+  render() { 
  
-// export default Card1;
+    return (
+
+            <section id="slider">
+                <div class="container">
+                    <div class="subcontainer">
+                        <div class="slider-wrapper">
+                            <div class="controller">
+                                <div id="controls">
+                                    <button class="previous"><i class="fa-solid fa-angles-left"></i></button>
+                                    <button class="next"><i class="fa-sharp fa-solid fa-angles-right"></i></button>
+                                </div>
+                                <br/>
+                                <div class="myslider">
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-1">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>First</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-2">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Second</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-3">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Third</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-4">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Fourth</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-5">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Fifth</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-6">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Six</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-7">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Seventh</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-8">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Eight</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="slide">
+                                            <div class="slide-img img-9">
+                                                <a href="/">Learn More</a>
+                                            </div>
+                                            <br/>
+                                            <div>
+                                                <h3>Nine</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+        
+        
+            </section>
+      
+    );
+  }
+}
+ 
+export default Card1;
 
