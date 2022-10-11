@@ -1,8 +1,16 @@
+import React, {useState, useEffect} from 'react';
+import { useParams } from 'react-router-dom';
+import sanityClient from './client';
 import './Society.css'
 import Header from './components/Header'
 import Footer from './components/Footer'
 
 const Society = () => {
+    const { slug } = useParams();
+    const [info, setinfo] = useState(null);
+    useEffect(() => {
+        sanityClient.fetch(`*[slug.current == "${slug}"]`).then((data)=>setinfo(data))
+      }, [slug])
     return (<div>
         <Header/>
         <div className='profile'>

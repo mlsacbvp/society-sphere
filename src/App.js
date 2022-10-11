@@ -16,7 +16,7 @@ function App() {
                   <Footer/> 
             </div>} 
           />
-          <Route path='/society' element={<Society />} />
+          <Route path="/society/:slug" element={<Society/>}/>
         </Routes>
       </Router>
   );

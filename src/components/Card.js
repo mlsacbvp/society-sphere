@@ -1,6 +1,12 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import sanityClient from "../client";
 
 const Card = ({cardData}) => {
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    sanityClient.fetch(`*[_type=="society"]`).then((res)=>{setData(res)}).catch(console.error);
+  }, [])
+  console.log(data);
   return (
     <>
 
