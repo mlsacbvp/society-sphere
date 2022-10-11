@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family:montsarret,sans-serif;
+}
+nav{
+    height: 80px;
+    width: 98%;
+    background: #556FF7;
+    border-radius: 30px;
+    margin: 15px 15px 100px;
+}
+label.logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    padding-bottom:100px;
+    line-height: 80px;
+    position:absolute;
+}

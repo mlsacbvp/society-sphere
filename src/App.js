@@ -4,6 +4,7 @@ import FlipCard from './components/FlipCard';
 import Society from './Society';
 import Footer from './components/Footer'
 import Carousel from './components/Carousel'
+import Header from './components/Header';
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='/' element={<div className="App">
+                  <Header/>
                   <Carousel/>
                   <FlipCard/>
                   <Footer/> 
