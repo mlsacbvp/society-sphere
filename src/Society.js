@@ -12,7 +12,7 @@ const Society = () => {
         sanityClient.fetch(`*[slug.current == "${slug}"]`).then((data)=>setinfo(data))
       }, [slug])
       console.log(info);
-    return (<div>
+    return (<div className='society'>
         <Header/>
         <div className='profile'>
             <div className='profile-left'>
