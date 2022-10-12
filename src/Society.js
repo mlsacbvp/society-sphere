@@ -11,6 +11,7 @@ const Society = () => {
     useEffect(() => {
         sanityClient.fetch(`*[slug.current == "${slug}"]`).then((data)=>setinfo(data))
       }, [slug])
+      console.log(info);
     return (<div>
         <Header/>
         <div className='profile'>
