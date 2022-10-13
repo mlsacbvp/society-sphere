@@ -19,3 +19,8 @@
   align-items: center;
   height: 80%;
 }
+
+::selection {
+  color: white;
+  background: #5874F3;
+}
