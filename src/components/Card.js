@@ -12,7 +12,7 @@ const Card = ({cardData}) => {
 function urlFor(source){
     return builder.image(source);
 }
-  console.log(cardData);
+  // console.log(cardData);
   return (
     <>
 

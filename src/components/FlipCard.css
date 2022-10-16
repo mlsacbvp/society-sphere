@@ -132,3 +132,16 @@
     align-items: center;
     margin-bottom: 4rem;
 }
+.flipCard_header select{
+    background: #5874F3;
+    color: white;
+    font-family: 'Molengo', sans-serif;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 999px;
+    display: flex;
+    justify-content: flex-end;
+    width: 30rem;
+}
