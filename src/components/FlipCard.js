@@ -20,7 +20,7 @@ const FlipCard = () => {
     // }
     return (
 
-        <div className='flipCard'>
+        <div id="FlipCard" className='flipCard'>
             {/* <datalist id="departments">
                 <option value="Technical" onClick={() => filterItem("Technical")}>Hello</option>
                 <option value="Non-Technical" onClick={() => filterItem("Non-Technical")}></option>

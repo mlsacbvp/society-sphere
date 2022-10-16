@@ -13,7 +13,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<div className="App">
                   <Header/>
-                  <Carousel/>
+                  {/* <Carousel/> */}
                   <FlipCard/>
                   <Footer/> 
             </div>} 
