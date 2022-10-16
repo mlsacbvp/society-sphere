@@ -3,7 +3,7 @@ import './Carousel.css';
 
 const Carousel = () => {
     return (
-        <div className='Carousel'>
+        <div id='RecentEventCarousel' className='Carousel'>
         <h1>RECENT EVENTS</h1>
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">

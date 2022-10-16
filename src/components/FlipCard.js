@@ -34,7 +34,7 @@ const FlipCard = () => {
     // }
     return (
 
-        <div className='flipCard'>
+        <div id='FlipCardId' className='flipCard'>
             <div className='flipCard_header'>
                 <h1>Societies</h1>
                 <select classname="form-select departments" aria-label="Default select example" onChange={handleChange}>
