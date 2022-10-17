@@ -1,53 +1,39 @@
 *{
     scroll-behavior: smooth;
-    /* margin: 0px; */
+    /* margin: 25px; */
 }
-.row {
-    color: white;
-    background-color:#29374D;
-    /* padding-bottom: 3em; */
-    /* display:flex;
-    flex-direction: row; */
-    /* padding-left: 5em; */
-    /* bottom: 0; */
-    /* width: 100%; */
-    border-radius: 25px 25px 0 0;
-    font-family: "Tahoma", sans-serif;
-    /* padding:2em; */
-    text-align: justify;
-    margin-top: 50px;
-}
-.content{
-    display:flex;
-    flex-direction: row;
-    /* margin-right: 10px;
-    margin-left: 50px; */
-}
-.row1{
-    color: white;
-    background-color:#556FF7;
+.footer-block{
     position: relative;
-    text-align: center;
-    /* padding-left: 5em; */
     left: 0;
-    border-radius: 15px 15px 0 0;
-    font-family: "Tahoma", sans-serif;
-    /* padding :10px; */
-    height: 45px;
-    width:100%;
-    
-    /* bottom: 0; */
-
-    
+    bottom: 0;
+    background-color: #29374D;
+    color: white;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+    text-align: justify;
+    padding-top: 5px;
 }
-/* .col-lg-3{
-    width: 50%;
-    /* font-family: "Tahoma, sans-serif";
-
-} */
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+.copyright-block{
+    background-color: #556FF7;
+    border-radius: 20px 20px 0 0;
+    padding: 5px;
+    text-align: center;
+}
+.footer-block h6{
+    font-weight: 100;
+    line-height: normal;
+}
 a{
     color:white;
     font-family: "Tahoma", sans-serif;
+    font-style: italic;
     text-decoration: none;
     line-height: 2.8;
     box-shadow: inset 0 0 0 0 #54b3d6;
@@ -60,14 +46,13 @@ a:hover {
     box-shadow: inset 200px 0 0 0 #54b3d6;
     color: rgb(10, 1, 63);
 }
-/* a.div:hover {
-    color: red;
-    font-size: larger;
-    line-height:18pt;
+/* .col-lg-3{
+    width: 50%;
+    font-family: "Tahoma, sans-serif";
+
 } */
-.btn{
-    position:fixed;
-    z-index: 100;
+/* .btn{
+    Position:absolute;
     right:0;
     margin-top: 4rem;
     padding:1rem;
@@ -76,16 +61,27 @@ a:hover {
     background-color: white;
     cursor:pointer;
     margin-right: 4rem;
+    width: 20px;
+} */
+
+.col-lg-4{
+    padding-left: 30px;
+    padding-right: 30px;
 }
-img{
-    height: 25px;
+
+.back-to-top{
+    /* position: absolute; */
+    position: fixed;
+    z-index: 5;
+    bottom: 20px;
+    right: 20px;
+    /* width: 200px; */
 }
-.main-footer{
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
-    /* padding-left: 20px;
-    padding-right: 20px; */
+.back-to-top img{
+    width: 75px;
 }
-   
+/* button{
+    padding: 0;
+    border: none;
+    background: none;
+} */
