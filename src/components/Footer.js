@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer2.css";
+import "./Footer.css";
 import FlipCardId from "./FlipCard";
 import RecentEventCarousel from "./Carousel";
 // import { BrowserRouter } from "react-router-dom";
@@ -46,7 +46,7 @@ const Footer = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra neque vel bibendum accumsan. Morbi quis massa eget turpis pretium elementum. Pellentesque eget iaculis nisl. Vestibulum vehicula venenatis justo ac luctus. </p>
           </h6>
         </div>
-        {/* <div className="col-lg-4"></div> */}
+        <div className="col-lg-1"></div>
         <div className="col-lg-4">
           <h2>Links</h2>
           <ul className="list-unstyled">
@@ -54,15 +54,19 @@ const Footer = () => {
             <h6><a href="#FlipCardId">All Societies</a></h6>
           </ul>
         </div>
-        {/* <div className="col-lg-4 top-button">
-            <button onClick={top} className="btn"><img src="https://cdn-icons-png.flaticon.com/512/608/608336.png" alt='top'></img></button>
-        </div> */}
       </div>
       <div className="copyright-block">
         <p className="col-sm">
           Copyright &copy; {new Date().getFullYear()} societysphere.com. All rights reserved.
         </p>
       </div>
+    </div>
+    <div className="back-to-top">
+      <button onClick={top} className="btn"><img src="https://i.imgur.com/etdZqUD.png" alt='top'></img></button>
+      {/* <button onClick={top} className="btn"><img src="https://i.imgur.com/nSC4iLE.png" alt='top'></img></button> */}
+      {/* <button onClick={top} className="btn"><img src="https://i.imgur.com/rF0BHBC.png" alt='top'></img></button> */}
+      {/* <button onClick={top} className="btn"><img src="https://cdn-icons-png.flaticon.com/512/3082/3082526.png" alt='top'></img></button> */}
+      {/* <button onClick={top} className="btn"><img src="https://cdn-icons-png.flaticon.com/512/608/608336.png" alt='top'></img></button> */}
     </div> 
   </div>
   // </BrowserRouter>
