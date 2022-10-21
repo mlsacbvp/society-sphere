@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import sanityClient from "../client";
-import './FlipCard.css';
-import Card from "./Card";
+import sanityClient from "../../client";
+import './style.css';
+
+import Card from "../Card";
+
 const FlipCard = () => {
     const [data, setData] = useState(null);
     const [cat, setcat] = useState('["Non-Technical", "Technical", "Cultural", "Cells"]');
@@ -10,24 +12,19 @@ const FlipCard = () => {
     }, [cat])
     console.log(data);
     const handleChange = (e) => {
-        if(e.target.value=="Technical")
-        {
+        if (e.target.value == "Technical") {
             setcat('["Technical"]');
         }
-        else if(e.target.value=="Non-Technical")
-        {
+        else if (e.target.value == "Non-Technical") {
             setcat('["Non-Technical"]');
         }
-        else if(e.target.value=="Cultural")
-        {
+        else if (e.target.value == "Cultural") {
             setcat('["Cultural"]');
         }
-        else if(e.target.value=="Cells")
-        {
+        else if (e.target.value == "Cells") {
             setcat('["Cells"]');
         }
-        else
-        {
+        else {
             setcat('["Non-Technical", "Technical", "Cultural", "Cell"]');
         }
     }
@@ -45,7 +42,7 @@ const FlipCard = () => {
                     <option className="btn-item" value="Cultural">Cultural</option>
                 </select>
             </div>
-            <Card cardData={data} key={data && data.length}/>
+            <Card cardData={data} key={data && data.length} />
         </div>
     )
 }
