@@ -1,10 +1,10 @@
 import React from 'react';
-import './Carousel.css';
+import './style.css';
 
 const Carousel = () => {
     return (
         <div id='RecentEventCarousel' className='Carousel'>
-        <h1>RECENT EVENTS</h1>
+            <h1>RECENT EVENTS</h1>
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
