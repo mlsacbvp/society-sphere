@@ -85,3 +85,13 @@ a:hover {
     border: none;
     background: none;
 } */
+
+
+
+.social .bi{
+padding: 0.5rem 0.6rem;
+color: black;
+margin-right: 0.5rem;
+background-color: #efcb44;
+border-radius: 50%;
+}

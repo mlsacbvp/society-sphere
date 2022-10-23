@@ -13,12 +13,12 @@ const Footer = () => {
             <h2>About us </h2>
             <h6 className="list-unstyled">
               <p>
-              Society sphere is a website, which provides information about all
-                 the recent and ongoing events in our college premises not only that, this website will
-                also,help you understand societies in detail, this will be very
-                beneficial for the new students who are in their first year and
-                wants to explore such technical, non-technical and various different cells/societies of
-                BVCOE.{" "}
+                Society sphere is a website, which provides information about
+                all the recent and ongoing events in our college premises not
+                only that, this website will also,help you understand societies
+                in detail, this will be very beneficial for the new students who
+                are in their first year and wants to explore such technical,
+                non-technical and various different cells/societies of BVCOE.{" "}
               </p>
             </h6>
           </div>
@@ -32,6 +32,20 @@ const Footer = () => {
               <h6>
                 <a href="#FlipCardId">All Societies</a>
               </h6>
+              <div className="social">
+                <a href="https://www.instagram.com/mlsac_bvcoe/">
+                  <i className="bi bi-instagram"></i>
+                </a>
+                <a href="https://twitter.com/MlscBvp">
+                  <i className="bi bi-twitter"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/mlsacbvp/mycompany/">
+                  <i className="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/mlsacbvp">
+                  <i className="bi bi-github"></i>
+                </a>
+              </div>
             </ul>
           </div>
         </div>
