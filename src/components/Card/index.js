@@ -27,9 +27,9 @@ const Card = ({ cardData }) => {
                 <div className="card-back">
                   <p className='para'>{curElem.about.slice(0, 80)}...</p>
                   <div className='links'>
-                    <a href={curElem.website} target="_blank"><img src="images/Link-icon.jpg" className='img' alt="social" /> </a>
-                    <a href={curElem.instagram} target="_blank"><img src="images/Instagram-icon.jpg" className='img' alt="social" /> </a>
-                    <a href={curElem.linkedin} target="_blank"><img src="images/Linkedin-icon.png" className='img' alt="social" /> </a>
+                    <a href={curElem.website} target="_blank" rel="noreferrer"><img src="images/Link-icon.jpg" className='img' alt="social" /> </a>
+                    <a href={curElem.instagram} target="_blank" rel="noreferrer"><img src="images/Instagram-icon.jpg" className='img' alt="social" /> </a>
+                    <a href={curElem.linkedin} target="_blank" rel="noreferrer"><img src="images/Linkedin-icon.png" className='img' alt="social" /> </a>
                   </div>
                 </div>
 
