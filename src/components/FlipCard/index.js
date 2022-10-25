@@ -10,24 +10,23 @@ const FlipCard = () => {
 
     useEffect(() => {
         sanityClient.fetch(
-            `*[_type==="society" && category in ${cat}]`
+            `*[_type=="society" && category in ${cat}]`
         ).then(
             (res) => { setData(res) }
         ).catch(console.error);
     }, [cat])
     // console.log(data);
-
     const handleChange = (e) => {
-        if (e.target.value === "Technical") {
+        if (e.target.value == "Technical") {
             setcat('["Technical"]');
         }
-        else if (e.target.value === "Non-Technical") {
+        else if (e.target.value == "Non-Technical") {
             setcat('["Non-Technical"]');
         }
-        else if (e.target.value === "Cultural") {
+        else if (e.target.value == "Cultural") {
             setcat('["Cultural"]');
         }
-        else if (e.target.value === "Cells") {
+        else if (e.target.value == "Cells") {
             setcat('["Cells"]');
         }
         else {
