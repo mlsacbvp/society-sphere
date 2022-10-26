@@ -30,7 +30,7 @@
     font-weight: 100;
     line-height: normal;
 }
-a{
+.footer-block a{
     color:white;
     font-family: "Tahoma", sans-serif;
     font-style: italic;
@@ -42,7 +42,7 @@ a{
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-a:hover {
+.footer-block a:hover {
     /* box-shadow: inset 200px 0 0 0 #54b3d6; */
     color: #efcb44;
 }
@@ -85,7 +85,7 @@ a:hover {
     border: none;
     background: none;
 } */
-h2{
+.footer-block h2{
     border-bottom: 2px solid #efcb44;
     width: fit-content;
 }
