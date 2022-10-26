@@ -1,0 +1,18 @@
+.carousel_img{
+    width: 25%;
+    height: 100%;
+    margin: 1rem;
+    border-radius: 20px;
+}
+.active{
+    display: flex !important;
+    justify-content: center !important;
+}
+.Carousel h1{
+    font-family: 'Bungee', cursive;
+    color: #EFCA46;
+    margin: 4rem 6rem;
+}
+.carousel{
+    margin-bottom: 8rem;
+}

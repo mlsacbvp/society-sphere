@@ -32,9 +32,38 @@ body{
     border-radius: 50%;
 }
 
-h2{
-    color: #EFCA46;
+.society h1{
+    position: relative;
+    font-size: 3rem;
+    /* font-family: ; */
+    -webkit-text-stroke: 0.3vw #EFCA46;
+    /* color: #EFCA46; */
+    text-transform: uppercase;
 }
+.society h1::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #4fed51;
+    -webkit-text-stroke: 0vw #EFCA46;
+    border-right: 2px solid #4fed51;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    -webkit-animation: animate 6s linear infinite; 
+}
+
+@keyframes amnimate{
+    0%{
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
+
 h4{
     color: #ffffff;
 }

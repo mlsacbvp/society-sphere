@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 *{
   font-family: 'Molengo', sans-serif;
@@ -17,4 +18,9 @@
   justify-content: center;
   align-items: center;
   height: 80%;
+}
+
+::selection {
+  color: white;
+  background: #5874F3;
 }
