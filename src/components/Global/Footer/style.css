@@ -85,7 +85,10 @@ a:hover {
     border: none;
     background: none;
 } */
-
+h2{
+    border-bottom: 2px solid #efcb44;
+    width: fit-content;
+}
 
 
 .social .bi{
