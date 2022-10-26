@@ -22,6 +22,7 @@
 ## Contributing ℹ️
 
 Please read our <a href="https://github.com/mlsacbvp/society-sphere/blob/main/CONTRIBUTING.md">Contributing Guide</a> before submitting a Pull Request to the project.
+Please adhere to this project's <a href="https://github.com/mlsacbvp/society-sphere/blob/main/CODE_OF_CONDUCT.md"> `code of conduct`.</a>
   
 ## Our Top Contributors 📈
 <p align="center"><a href="https://github.com/mlsacbvp/society-sphere/graphs/contributors">

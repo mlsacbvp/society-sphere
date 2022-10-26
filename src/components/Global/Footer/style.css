@@ -43,8 +43,8 @@ a{
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 a:hover {
-    box-shadow: inset 200px 0 0 0 #54b3d6;
-    color: rgb(10, 1, 63);
+    /* box-shadow: inset 200px 0 0 0 #54b3d6; */
+    color: #efcb44;
 }
 /* .col-lg-3{
     width: 50%;
@@ -85,3 +85,13 @@ a:hover {
     border: none;
     background: none;
 } */
+
+
+
+.social .bi{
+padding: 0.5rem 0.6rem;
+color: black;
+margin-right: 0.5rem;
+background-color: #efcb44;
+border-radius: 50%;
+}
