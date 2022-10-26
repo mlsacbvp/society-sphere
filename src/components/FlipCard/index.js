@@ -3,6 +3,7 @@ import sanityClient from "../../client";
 import './style.css';
 
 import Card from "../Card";
+import PhoneCard from '../PhoneCard';
 
 const FlipCard = () => {
     const [data, setData] = useState(null);
@@ -17,20 +18,20 @@ const FlipCard = () => {
     }, [cat])
     // console.log(data);
     const handleChange = (e) => {
-        if (e.target.value == "Technical") {
+        if (e.target.value === "Technical") {
             setcat('["Technical"]');
         }
-        else if (e.target.value == "Non-Technical") {
+        else if (e.target.value === "Non-Technical") {
             setcat('["Non-Technical"]');
         }
-        else if (e.target.value == "Cultural") {
+        else if (e.target.value === "Cultural") {
             setcat('["Cultural"]');
         }
-        else if (e.target.value == "Cells") {
+        else if (e.target.value === "Cells") {
             setcat('["Cells"]');
         }
         else {
-            setcat('["Non-Technical", "Technical", "Cultural", "Cell"]');
+            setcat('["Non-Technical", "Technical", "Cultural", "Cells"]');
         }
     }
 
@@ -47,7 +48,8 @@ const FlipCard = () => {
                     <option className="btn-item" value="Cultural">Cultural</option>
                 </select>
             </div>
-            <Card cardData={data} key={data && data.length} />
+            <Card cardData={data} key={(data && data.length)+1} />
+            <PhoneCard cardData={data} key={(data && data.length)+2}/>
         </div>
     )
 }

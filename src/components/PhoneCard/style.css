@@ -1,0 +1,30 @@
+.PhoneCard_container{
+    display: none;
+    flex-direction: column;
+}
+
+.PhoneCard_container a{
+    text-decoration: none;
+}
+
+.PhoneCard{
+    background: #5874F3;
+    margin: 1rem 0rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 20px;
+}
+
+.PhoneCard img{
+    height: 2rem;
+    margin-right: 0.5rem;
+    border-radius: 999px;
+}
+
+@media screen and (max-width: 800px){
+    .PhoneCard_container{
+        display: flex;
+    }
+}
