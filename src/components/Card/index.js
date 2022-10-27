@@ -16,13 +16,11 @@ const Card = ({ cardData }) => {
         {cardData && cardData.map((curElem, i) => {
           return (
             <div className='Society_cards' key={curElem.slug.current}>
-
               <div className="card-front">
                 <img src={urlFor(curElem.logo).url()} className='image' alt="logo" />
                 <h6>{curElem.name}</h6>
                 <span className='categ'> {curElem.category} </span>
               </div>
-
               <div className="card-back">
                 <Link to={"/society/" + curElem.slug.current}>
                   <p className='para'>{curElem.about.slice(0, 80)}...</p>
