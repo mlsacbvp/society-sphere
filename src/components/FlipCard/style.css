@@ -109,6 +109,22 @@
 
 .links{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.links a{
+    background: #5874F3;
+    color: #EFCA46;
+    border-radius: 999px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.links a svg{
+    font-size: 2rem;
 }
 
 .btn-item{
