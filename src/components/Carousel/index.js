@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import './style.css';
 import sanityClient from "../../client";
 import ImageUrlBuilder from '@sanity/image-url';
@@ -15,28 +15,23 @@ const Carousel = () => {
     console.log(carouselData);
     const builder = ImageUrlBuilder(sanityClient);
     function urlFor(source) {
-      return builder.image(source);
+        return builder.image(source);
     }
     return (
         <div id='RecentEventCarousel' className='Carousel'>
             <h1>RECENT EVENTS</h1>
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    {/* <div className="carousel-item active">
-                        <img src="https://wallpapercave.com/dwp2x/wp3788222.jpg" className="carousel_img" alt="..." />
-                        <img src="https://wallpapercave.com/dwp2x/wp3788222.jpg" className="carousel_img" alt="..." />
-                        <img src="https://wallpapercave.com/dwp2x/wp3788222.jpg" className="carousel_img" alt="..." />
-                    </div> */}
-                    {carouselData && carouselData.map((event, index)=>{
-                        return(
-                    <div className={`carousel-item ${index===0?"active":""}`}>
-                        <img src={urlFor(event.poster1).url()} className="carousel_img" alt={event.poster1.alt} />
-                        <img src={urlFor(event.poster2).url()} className="carousel_img" alt={event.poster2.alt} />
-                        <img src={urlFor(event.poster3).url()} className="carousel_img" alt={event.poster3.alt} />
-                    </div>
-                        )
-                    })}
-                </div>
+                {carouselData && carouselData.map((event, index) => {
+                    return (
+                        <div className="carousel-inner">
+                            <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
+                                <img src={urlFor(event.poster1).url()} className="carousel_img" alt={event.poster1.alt} />
+                                <img src={urlFor(event.poster2).url()} className="carousel_img" alt={event.poster2.alt} />
+                                <img src={urlFor(event.poster3).url()} className="carousel_img" alt={event.poster3.alt} />
+                            </div>
+                        </div>
+                    )
+                })}
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="visually-hidden">Previous</span>

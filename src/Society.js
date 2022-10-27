@@ -4,6 +4,7 @@ import sanityClient from './client';
 import './Society.css'
 import Footer from './components/Global/Footer';
 import Header from './components/Global/Header';
+import ImageUrlBuilder from '@sanity/image-url';
 
 const Society = () => {
     const { slug } = useParams();
@@ -12,22 +13,59 @@ const Society = () => {
         sanityClient.fetch(`*[slug.current == "${slug}"]`).then((data) => setinfo(data))
     }, [slug])
     console.log(info);
+    const builder = ImageUrlBuilder(sanityClient);
+    function urlFor(source) {
+      return builder.image(source);
+    }
     return (<div className='society'>
         <Header />
-        <div className='profile'>
-            <div className='profile-left'>
-                <img src='./society_logo.png' className='profile-logo' alt='society logo'></img>
-            </div>
-            <div className='profile-right'>
-                <h1 data-text="AniMation">MLSAC</h1>
-                <h4>Date of establishment - </h4>
-                <h4>Type - </h4>
-            </div>
-        </div>
-        <div className='about-us'>
-            <h1 data-text="AniMation">About Us</h1>
-            <h4>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</h4>
-        </div>
+        {info && info.map((society) => {
+            return (
+                <div key={society.slug.current}>
+                    <div className='profile'>
+                        <div className='profile-left'>
+                            <img src={urlFor(society.logo).url()} className='profile-logo' alt='society logo'></img>
+                        </div>
+                        <div className='profile-right'>
+                            <h2>{society.name}</h2>
+                            <p>Faculty Coordinator - {society.facultyHead}</p>
+                            <p>Chairperson - {society.chairperson}</p>
+                            <p>Vice Chairperson - {society.viceChairperson}</p>
+                            <p>Year of establishment - {society.date.slice(0,4)}</p>
+                            <p>Type - {society.category}</p>
+                        </div>
+                    </div>
+                    <div className='about-us'>
+                        <h2>About</h2>
+                        <p>{society.about}</p>
+                    </div>
+                    {society.recentEvent1_img && <div className='society_recent_event_section'>
+                        <h2>Recent Events</h2>
+                        <div className='society_recentEvent_card'>
+                            <img src={urlFor(society.recentEvent1_img).url()} alt="event_poster"/>
+                            <div className='society_recentEvent_card_info'>
+                                <h3>{society.recentEvent1_title}</h3>
+                                <p>{society.recentEvent1_desc}</p>
+                            </div>
+                        </div>
+                        <div className='society_recentEvent_card'>
+                            <img src={urlFor(society.recentEvent2_img).url()} alt="event_poster"/>
+                            <div className='society_recentEvent_card_info'>
+                                <h3>{society.recentEvent2_title}</h3>
+                                <p>{society.recentEvent2_desc}</p>
+                            </div>
+                        </div>
+                        <div className='society_recentEvent_card'>
+                            <img src={urlFor(society.recentEvent3_img).url()} alt="event_poster"/>
+                            <div className='society_recentEvent_card_info'>
+                                <h3>{society.recentEvent3_title}</h3>
+                                <p>{society.recentEvent3_desc}</p>
+                            </div>
+                        </div>
+                    </div>}
+                </div>
+            )
+        })}
         <Footer />
     </div>);
 }

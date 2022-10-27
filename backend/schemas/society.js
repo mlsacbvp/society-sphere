@@ -58,7 +58,75 @@ export default {
             title: 'date',
             name: 'date',
             type: 'date'
-          }
-
+        },
+        {
+            name: 'facultyHead',
+            type: 'string',
+            title: 'facultyHead'
+        },
+        {
+            name: 'chairperson',
+            type: 'string',
+            title: 'chairperson'
+        },
+        {
+            name: 'viceChairperson',
+            type: 'string',
+            title: 'viceChairperson'
+        },
+        {
+            name: 'recentEvent1_title',
+            type: 'string',
+            title: 'recentEvent1_title'
+        },
+        {
+            title: 'recentEvent1_img',
+            name: 'recentEvent1_img',
+            type: 'image',
+            options: {
+                hotspot: true // <-- Defaults to false
+            }
+        },
+        {
+            title: 'recentEvent1_desc',
+            name: 'recentEvent1_desc',
+            type: 'text'
+        },
+        {
+            name: 'recentEvent2_title',
+            type: 'string',
+            title: 'recentEvent2_title'
+        },
+        {
+            title: 'recentEvent2_img',
+            name: 'recentEvent2_img',
+            type: 'image',
+            options: {
+                hotspot: true // <-- Defaults to false
+            }
+        },
+        {
+            title: 'recentEvent2_desc',
+            name: 'recentEvent2_desc',
+            type: 'text'
+        },
+        {
+            name: 'recentEvent3_title',
+            type: 'string',
+            title: 'recentEvent3_title'
+        },
+        {
+            title: 'recentEvent3_img',
+            name: 'recentEvent3_img',
+            type: 'image',
+            options: {
+                hotspot: true // <-- Defaults to false
+            }
+        },
+        {
+            title: 'recentEvent3_desc',
+            name: 'recentEvent3_desc',
+            type: 'text'
+        },
     ]
 }
