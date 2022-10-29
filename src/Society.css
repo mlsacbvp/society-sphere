@@ -1,46 +1,47 @@
-/* *{
-    background-color: #0A0D14;
-} */
 body{
     background-color: #0A0D14;
     color: #ffffff;
-    align-items: center;
 }
 .profile{
     width: 80%;
     display: flex;
-    padding: 2rem 6rem;
+    padding: 2rem 0rem;
     margin: 4rem 6rem;
     justify-content: space-evenly ;
     flex-wrap: wrap;
 }
 .profile-left{
     width: 30%;
-    position: absolute;
-    left: 10%;
+    /* position: absolute; */
+    /* left: 10%; */
    
     
 }
 .profile-right{
     width: 70%;
+    display: flex;
+    flex-direction: column;
     /* position: relative;
     left: 10%; */
-    
+}
+.profile-right p{
+    font-size: 1.25rem;
 }
 .profile-logo{
-    height: 10rem;
-    border-radius: 50%;
+    height: 15rem;
+    /* border-radius: 50%; */
 }
 
-.society h1{
-    position: relative;
+.society h2{
+    /* position: relative; */
     font-size: 3rem;
+    color: #efcb44;
     /* font-family: ; */
-    -webkit-text-stroke: 0.3vw #EFCA46;
+    /* -webkit-text-stroke: 0.3vw #EFCA46; */
     /* color: #EFCA46; */
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
 }
-.society h1::before{
+/* .society h1::before{
     content: attr(data-text);
     position: absolute;
     top: 0;
@@ -53,16 +54,8 @@ body{
     overflow: hidden;
     animation: animate 6s linear infinite;
     -webkit-animation: animate 6s linear infinite; 
-}
+} */
 
-@keyframes amnimate{
-    0%{
-        width: 0;
-    }
-    70%{
-        width: 100%;
-    }
-}
 
 h4{
     color: #ffffff;
@@ -72,6 +65,26 @@ h4{
     margin: 4rem 6rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+}
+.about-us p{
+    font-size: 1.25rem;
+}
+
+.society_recent_event_section{
+    margin: 4rem 6rem;
+}
+
+.society_recentEvent_card{
+    display: flex;
+    width: 80%;
+    padding: 1.5rem 0;
+    margin: 1.5rem 0;
+    border-bottom: 0.5px solid white;
+}
+
+.society_recentEvent_card img{
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    margin-right: 1rem;
 }

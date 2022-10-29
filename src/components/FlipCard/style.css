@@ -15,8 +15,8 @@
 
 .Society_cards {
     /* size */
-    height: 350px;
-    width: 300px;
+    height: 300px;
+    width: 15rem;
 
     /* position: relative; */
     transform-style: preserve-3d;
@@ -39,15 +39,15 @@
 
 .Society_cards:hover {
     transform: rotateY(180deg);
+    /* display: none; */
 }
 
 .card-front,
 .card-back {
     height: 100%;
-    width: 100%;
-
+    /* width: 100%; */
+    width: 15rem;
     position: absolute;
-
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 
@@ -55,7 +55,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     color: black;
     border-radius: 25px;
 }
@@ -67,7 +67,7 @@
 
 .card-front h6{
     /* margin: 3rem; */
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -81,10 +81,10 @@
     color: black;
     text-decoration: none;
     line-height: 2em;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
 }
 .image {
-    height: 130px;
+    height: 7rem;
     width: auto;
 }
 
@@ -96,7 +96,7 @@
     display: block;
     /* font-family: 'Alkalami'; */
     font-size: 1rem;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     color: black;
     color: gray;
 }
@@ -109,6 +109,22 @@
 
 .links{
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.links a{
+    background: #5874F3;
+    color: #EFCA46;
+    border-radius: 999px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.links a svg{
+    font-size: 2rem;
 }
 
 .btn-item{
