@@ -18,8 +18,8 @@ const Card = ({ cardData }) => {
       <section className='flipcard-container'>
         {cardData && cardData.map((curElem, i) => {
           return (
-            <div className='society_card_outer'>
-              <div className='Society_cards' key={curElem.slug.current}>
+            <div className='society_card_outer' key={curElem.slug.current}>
+              <div className='Society_cards'>
 
                 <div className="card-front">
                   <img src={urlFor(curElem.logo).url()} className='card-image' alt="logo" />
