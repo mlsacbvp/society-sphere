@@ -23,7 +23,7 @@ const Carousel = () => {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
                 {carouselData && carouselData.map((event, index) => {
                     return (
-                        <div className="carousel-inner">
+                        <div className="carousel-inner" key={index}>
                             <div className={`carousel-item ${index === 0 ? "active" : ""}`}>
                                 <img src={urlFor(event.poster1).url()} className="carousel_img" alt={event.poster1.alt} />
                                 <img src={urlFor(event.poster2).url()} className="carousel_img" alt={event.poster2.alt} />
