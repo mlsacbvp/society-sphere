@@ -16,6 +16,7 @@ const FlipCard = () => {
             (res) => { setData(res) }
         ).catch(console.error);
     }, [cat])
+
     // console.log(data);
     const handleChange = (e) => {
         if (e.target.value === "Technical") {
@@ -48,8 +49,8 @@ const FlipCard = () => {
                     <option className="btn-item" value="Cultural">Cultural</option>
                 </select>
             </div>
-            <Card cardData={data} key={(data && data.length)+1} />
-            <PhoneCard cardData={data} key={(data && data.length)+2}/>
+            <Card cardData={data} key={(data && data.length) + 1} />
+            <PhoneCard cardData={data} key={(data && data.length) + 2} />
         </div>
     )
 }
