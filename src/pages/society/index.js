@@ -37,7 +37,7 @@ const Society = () => {
                                 <p>Faculty Coordinator - {society.facultyHead}</p>
                                 <p>Chairperson - {society.chairperson}</p>
                                 <p>Vice Chairperson - {society.viceChairperson}</p>
-                                <p>Year of establishment - {society.date?.slice(0, 4)}</p>
+                                <p>Year of establishment - {society.date ? society.date.slice(0, 4) : "N/A"}</p>
                                 <p>Type - {society.category}</p>
                             </div>
                         </div>
