@@ -24,7 +24,7 @@ const Slider = () => {
         carouselDataPosters.push(element.poster1, element.poster2, element.poster3)
     });
 
-    console.log(carouselDataPosters);
+    // console.log(carouselDataPosters);
 
     const builder = ImageUrlBuilder(sanityClient);
     function urlFor(source) {
@@ -45,7 +45,7 @@ const Slider = () => {
             >
                 {carouselData && carouselData.map((event, index) => {
                     return (
-                        <div className="recent-events-carousel-item">
+                        <div className="recent-events-carousel-item" key={index}>
                             <img src={urlFor(event.poster1).url()} className="carousel_img" alt={event.poster1.alt} />
                             <img src={urlFor(event.poster2).url()} className="carousel_img" alt={event.poster2.alt} />
                             <img src={urlFor(event.poster3).url()} className="carousel_img" alt={event.poster3.alt} />
@@ -67,11 +67,9 @@ const Slider = () => {
             >
                 {carouselDataPosters && carouselDataPosters.map((event, index) => {
                     return (
-                        <>
-                            <div className="recent-events-carousel-item">
-                                <img src={urlFor(event).url()} className="carousel_img_phone" alt={event.alt} />
-                            </div>
-                        </>
+                        <div className="recent-events-carousel-item" key={index}>
+                            <img src={urlFor(event).url()} className="carousel_img_phone" alt={event.alt} />
+                        </div>
                     )
                 })}
             </Carousel>
