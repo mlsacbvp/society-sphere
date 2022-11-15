@@ -62,6 +62,7 @@ const Slider = () => {
                 // showArrows={false}
                 showThumbs={false}
                 interval={5000}
+                swipeable={false}
                 className="home-page__phone-slider"
             >
                 {carouselDataPosters && carouselDataPosters.map((event, index) => {

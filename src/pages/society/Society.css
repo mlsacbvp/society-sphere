@@ -72,7 +72,7 @@ body {
     display: flex;
     width: 80%;
     padding: 1.5rem 0;
-    margin: 1.5rem 0;
+    margin: 0 0 1rem;
     border-bottom: 0.5px solid white;
 }
 
@@ -132,6 +132,29 @@ body {
     }
 
     .about-us h2 {
-        margin-bottom: 1rem;
+        margin: 1rem 0;
+    }
+
+    .society_recent_event_section {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .society_recentEvent_card {
+        flex-direction: column;
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .society_recentEvent_card img {
+        width: 18rem;
+        height: 18rem;
+        object-fit: contain;
+        object-position: left;
+    }
+
+    .society_recentEvent_card_info h3 {
+        font-size: 2rem;
+        margin-top: 1rem;
     }
 }

@@ -40,10 +40,13 @@ const Society = () => {
                                 <p>Year of establishment - {society.date ? society.date.slice(0, 4) : "N/A"}</p>
                                 <p>Type - {society.category}</p>
                                 <div className="social society-social">
-                                    <a href="https://www.instagram.com/mlsac_bvcoe/">
+                                    <a href={society.website}>
+                                        <i className="bi bi-link"></i>
+                                    </a>
+                                    <a href={society.instagram}>
                                         <i className="bi bi-instagram"></i>
                                     </a>
-                                    <a href="https://www.linkedin.com/company/mlsacbvp/mycompany/">
+                                    <a href={society.linkedin}>
                                         <i className="bi bi-linkedin"></i>
                                     </a>
                                 </div>

@@ -19,15 +19,19 @@
 }
 
 .carousel_img {
-    width: 28% !important;
-    height: 100%;
+    width: 25rem !important;
+    height: 25rem;
     object-fit: cover;
     margin: 1rem 1rem;
     border-radius: 20px;
 }
 
 .carousel_img_phone {
-    width: 75% !important;
+    width: 20rem !important;
+    height: 20rem !important;
+    object-fit: cover;
+    margin: 1rem 1rem;
+    border-radius: 20px;
 }
 
 /* styling default carousel css */
