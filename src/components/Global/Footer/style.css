@@ -30,6 +30,10 @@
     text-align: center;
 }
 
+.copyright-block p {
+    margin: 0.2rem 0;
+}
+
 .footer-block h6 {
     font-weight: 100;
     line-height: normal;

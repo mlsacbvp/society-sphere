@@ -50,9 +50,12 @@ const Footer = () => {
           </div>
         </div>
         <div className="copyright-block">
-          <p className="col-sm">
-            Copyright &copy; {new Date().getFullYear()} societysphere.com. All
+          {/* <p className="col-sm">
+            Copyright &copy; {new Date().getFullYear()} MLSACBVP. All
             rights reserved.
+          </p> */}
+          <p className="col-sm">
+            Designed and Developed by team MLSAC-BVP
           </p>
         </div>
       </div>
