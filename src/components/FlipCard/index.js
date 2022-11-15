@@ -11,7 +11,8 @@ const FlipCard = () => {
 
     useEffect(() => {
         sanityClient.fetch(
-            `*[_type=="society" && category in ${cat}]`
+            // `*[_type=="society" && category in ${cat}]'
+            `*[_type == "society" && category in ${cat}] | order(name)`
         ).then(
             (res) => { setData(res) }
         ).catch(console.error);
