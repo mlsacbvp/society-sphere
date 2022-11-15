@@ -9,6 +9,7 @@ const Footer = () => {
     <div>
       <div className="footer-block">
         <div className="footer-content">
+
           <div className="col-lg-4">
             <h2>About us </h2>
             <h6 className="list-unstyled">
@@ -18,20 +19,21 @@ const Footer = () => {
                 only that, this website will also,help you understand societies
                 in detail, this will be very beneficial for the new students who
                 are in their first year and wants to explore such technical,
-                non-technical and various different cells/societies of BVCOE.{" "}
+                non-technical and various different cells/societies of BVCOE.
               </p>
             </h6>
           </div>
-          <div className="col-lg-1"></div>
+
           <div className="col-lg-4">
             <h2>Links</h2>
             <ul className="list-unstyled">
-              <h6>
+              <h6 className="footer-links">
                 <a href="#RecentEventCarousel">Societies Recent Event</a>
               </h6>
-              <h6>
+              <h6 className="footer-links">
                 <a href="#FlipCardId">All Societies</a>
               </h6>
+
               <div className="social">
                 <a href="https://www.instagram.com/mlsac_bvcoe/">
                   <i className="bi bi-instagram"></i>
