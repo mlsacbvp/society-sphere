@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Society from './Society';
+import Society from './pages/society';
 
 import FlipCard from './components/FlipCard';
 import Carousel from './components/Carousel';

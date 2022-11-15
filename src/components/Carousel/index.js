@@ -5,6 +5,7 @@ import ImageUrlBuilder from '@sanity/image-url';
 
 const Carousel = () => {
     const [carouselData, setcarouselData] = useState(null);
+
     useEffect(() => {
         sanityClient.fetch(
             `*[_type=="recent"]`
@@ -12,11 +13,13 @@ const Carousel = () => {
             (res) => { setcarouselData(res) }
         ).catch(console.error);
     }, [])
-    console.log(carouselData);
+
+    // console.log(carouselData);
     const builder = ImageUrlBuilder(sanityClient);
     function urlFor(source) {
         return builder.image(source);
     }
+
     return (
         <div id='RecentEventCarousel' className='Carousel'>
             <h1>RECENT EVENTS</h1>
