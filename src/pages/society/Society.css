@@ -18,7 +18,7 @@ body {
 
 .profile-logo {
     height: 15rem;
-    width: 90%;
+    width: 100%;
     object-fit: contain;
 }
 
@@ -83,6 +83,14 @@ body {
     margin-right: 1rem;
 }
 
+.society-social {
+    margin-top: 0.5rem;
+}
+
+.society-social a {
+    margin: 0 0.25rem 0 0;
+}
+
 @media screen and (max-width: 800px) {
     .profile {
         flex-direction: column;
@@ -109,6 +117,14 @@ body {
 
     .profile-right h2 {
         margin-bottom: 1rem;
+    }
+
+    .society-social {
+        margin-top: 1rem !important;
+    }
+
+    .society-social a {
+        margin-right: 0.5rem;
     }
 
     .about-us {
