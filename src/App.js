@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Society from './pages/society';
 
 import FlipCard from './components/FlipCard';
-import Carousel from './components/Carousel';
+import Slider from './components/Carousel/index.js';
 
 import Footer from './components/Global/Footer';
 import Header from './components/Global/Header';
@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<div className="App">
           <Header />
-          <Carousel />
+          <Slider />
           <FlipCard />
           <Footer />
         </div>}

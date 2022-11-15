@@ -179,4 +179,14 @@
     .flipcard-container {
         display: none;
     }
+
+    .flipCard_header {
+        flex-direction: column;
+    }
+
+    .flipCard_header select {
+        width: 80%;
+        margin-top: 1rem;
+        font-size: 1.2rem;
+    }
 }
