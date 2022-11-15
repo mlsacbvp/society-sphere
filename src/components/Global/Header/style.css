@@ -23,4 +23,9 @@ nav img {
     .logo {
         margin: 0 0 0 1rem;
     }
+
+    nav a {
+        width: 87%;
+        margin: 1.5rem auto;
+    }
 }
