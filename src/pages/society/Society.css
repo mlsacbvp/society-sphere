@@ -4,20 +4,20 @@ body {
 }
 
 .profile {
-    width: 80%;
+    width: 85%;
     display: flex;
     padding: 2rem 0rem;
     margin: 4rem 6rem;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex-wrap: wrap;
 }
 
 .profile-left {
-    width: 30%;
+    width: 20rem;
 }
 
 .profile-logo {
-    height: 15rem;
+    /* height: 15rem; */
     width: 100%;
     object-fit: contain;
 }
