@@ -7,7 +7,7 @@ const Header = () => {
     <nav>
       <Link to='/'>
         <img src="/society_logo.png" alt="logo" />
-        <span className="logo">
+        <span className="logo-txt">
           SOCIETY SPHERE
         </span>
       </Link>

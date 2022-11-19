@@ -28,10 +28,10 @@ const Footer = () => {
             <h2>Links</h2>
             <ul className="list-unstyled">
               <h6 className="footer-links">
-                <a href="#RecentEventCarousel">Societies Recent Event</a>
+                <a href="/#RecentEventCarousel">Recent events</a>
               </h6>
               <h6 className="footer-links">
-                <a href="#FlipCardId">All Societies</a>
+                <a href="/#FlipCardId">All Societies</a>
               </h6>
 
               <div className="social">

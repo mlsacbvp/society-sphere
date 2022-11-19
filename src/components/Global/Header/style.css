@@ -1,9 +1,14 @@
-nav a {
+nav {
     background: #5874F3;
     border-radius: 25px;
+    width: 97%;
+    margin: 1.5rem;
+}
+
+nav a {
+    width: fit-content;
     display: flex;
     align-items: center;
-    margin: 1.5rem;
     padding: 0.5rem 1rem;
     text-decoration: none;
 }
@@ -12,20 +17,20 @@ nav img {
     height: 4rem;
 }
 
-.logo {
+.logo-txt {
     font-size: 1.5rem;
     font-family: 'Bungee', cursive;
-    margin: 0 3rem;
+    margin: 0 2rem;
     color: white;
 }
 
 @media screen and (max-width: 800px) {
-    .logo {
+    .logo-txt {
         margin: 0 0 0 1rem;
     }
 
-    nav a {
-        width: 87%;
+    nav {
+        width: 90%;
         margin: 1.5rem auto;
     }
 }

@@ -10,7 +10,6 @@
     margin-top: 3rem;
     text-align: justify;
     padding-top: 5px;
-
 }
 
 .footer-content {
@@ -44,7 +43,7 @@
 
 .footer-block a {
     color: white;
-    font-family: "Tahoma", sans-serif;
+    /* font-family: "Tahoma", sans-serif; */
     text-decoration: none;
     margin: 0 0rem;
     padding: 0 .25rem;
@@ -108,6 +107,10 @@
 
     .footer-links {
         font-size: 1.2rem;
+    }
+
+    .footer-links a {
+        padding: 0;
     }
 
     .social {
