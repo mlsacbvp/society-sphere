@@ -29,8 +29,8 @@ nav img {
         margin: 0 0 0 1rem;
     }
 
-    nav a {
-        width: 87%;
+    nav {
+        width: 90%;
         margin: 1.5rem auto;
     }
 }
