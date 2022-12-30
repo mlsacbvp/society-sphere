@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import sanityClient from "../../client";
 import './style.css';
 
-import Card from "../Card";
+import Card from "../WebCard";
 import PhoneCard from '../PhoneCard';
 
-const FlipCard = () => {
+const CardsList = () => {
     const [data, setData] = useState(null);
     const [cat, setcat] = useState('["Non-Technical", "Technical", "Cultural", "Cells"]');
 
@@ -56,4 +56,4 @@ const FlipCard = () => {
     )
 }
 
-export default FlipCard;
+export default CardsList;
