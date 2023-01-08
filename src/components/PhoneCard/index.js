@@ -34,7 +34,7 @@ const PhoneCard = ({ cardData }) => {
                 </div>
 
                 <div class="main-content">
-                  <p>{society.about.slice(0, 80)}...</p>
+                  <p class="about-society">{society.about.slice(0, 80)}...</p>
                 </div>
 
                 <div className="links">
