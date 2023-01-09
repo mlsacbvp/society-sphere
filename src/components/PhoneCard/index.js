@@ -37,7 +37,7 @@ const PhoneCard = ({ cardData }) => {
                   <p class="about-society">{society.about.slice(0, 80)}...</p>
                 </div>
 
-                <div className="links">
+                <div className="links" id="phonelinks">
                   <a href={"/society/" + society.slug.current} target="_blank" rel="noreferrer">
                     <LinkIcon />
                   </a>

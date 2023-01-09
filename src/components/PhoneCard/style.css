@@ -136,7 +136,7 @@ h1 {
 
 }
 
-.links {
+#phonelinks {
     justify-content: space-around;
     opacity: 0;
     overflow:hidden ;
@@ -162,7 +162,7 @@ h1 {
 }
 
 
-.card:hover>.links {
+.card:hover>#phonelinks {
     opacity: 1;
     height: fit-content;
     transform: translateY(12.8rem);
