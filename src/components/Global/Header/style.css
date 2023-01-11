@@ -22,11 +22,43 @@ nav img {
     font-family: 'Bungee', cursive;
     margin: 0 2rem;
     color: white;
+    position: relative;
+    top: -9px
+}
+.logo-txt-subtitle {
+    font-size: 1rem;
+    font-family: 'Bungee', cursive;
+    margin: 0 2rem;
+    color: white;
+    position: relative;
+    top: 1.6rem;
+    left: -17.5rem;
 }
 
 @media screen and (max-width: 800px) {
     .logo-txt {
         margin: 0 0 0 1rem;
+        /* width: 17rem; */
+    }
+
+    .logo-txt-subtitle{
+        left: -15.5rem;
+    }
+
+    nav {
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+}
+@media screen and (max-width: 586px) {
+    .logo-txt {
+        margin: 0 0 0 1rem;
+        width: 15rem;
+    }
+
+    .logo-txt-subtitle{
+        left: -17rem;
+        width: 9rem;
     }
 
     nav {

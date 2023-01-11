@@ -9,7 +9,10 @@ const Header = () => {
         <img src="/society_logo.png" alt="logo" />
         <span className="logo-txt">
           SOCIETY SPHERE
-        </span>
+        </span><br></br>
+        <div className='logo-txt-subtitle'>
+          <p>An MLSAC Initiative</p>
+        </div>
       </Link>
     </nav>
   )
