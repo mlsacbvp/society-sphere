@@ -33,6 +33,7 @@ nav img {
     position: relative;
     top: 1.6rem;
     left: -17.5rem;
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 800px) {
